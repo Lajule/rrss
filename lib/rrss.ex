@@ -1,18 +1,11 @@
 defmodule RRSS do
-  @moduledoc """
-  Documentation for RRSS.
-  """
+  use HTTPoison.Base
 
-  @doc """
-  Hello world.
-
-  ## Examples
-
-      iex> RRSS.hello()
-      :world
-
-  """
-  def hello do
-    :world
+  def process_response_body(body) do
+    body
+    |> Fiet.parse!
+    |> Map.fetch!(:items)
+    |> Enum.random
+    |> Map.update!(:description, &(Floki.text(&1)))
   end
 end

@@ -14,8 +14,12 @@ def deps do
   ]
 end
 ```
+## Docker
+
+```sh
+docker run -it --rm -v $PWD:/usr/src/rrss -v $PWD:/root -w /usr/src/rrss elixir iex -S mix
+```
 
 Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
 and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
 be found at [https://hexdocs.pm/rrss](https://hexdocs.pm/rrss).
-
