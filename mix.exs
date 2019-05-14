@@ -21,8 +21,9 @@ defmodule RRSS.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:tesla, "~> 1.2.1"},
-      {:fiet, "~> 0.2.1"}
+      {:fiet, "~> 0.2.1"},
+      {:floki, "~> 0.21.0"},
+      {:httpoison, "~> 1.4"}
     ]
   end
 end
