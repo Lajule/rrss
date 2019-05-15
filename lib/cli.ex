@@ -1,8 +1,8 @@
 defmodule RRSS.CLI do
   def main(args) do
-    RRSS.Spinner.start
+    RRSS.Spinner.start()
     response = RRSS.get(Enum.random(args))
-    RRSS.Spinner.stop
+    RRSS.Spinner.stop()
 
     IO.inspect(response)
   end

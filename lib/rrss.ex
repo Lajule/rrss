@@ -3,9 +3,9 @@ defmodule RRSS do
 
   def process_response_body(body) do
     body
-    |> Fiet.parse!
+    |> Fiet.parse!()
     |> Map.fetch!(:items)
-    |> Enum.random
-    |> Map.update!(:description, &(Floki.text(&1)))
+    |> Enum.random()
+    |> Map.update!(:description, &Floki.text(&1))
   end
 end

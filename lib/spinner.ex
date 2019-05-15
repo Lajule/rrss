@@ -26,13 +26,19 @@ defmodule RRSS.Spinner do
   end
 
   def handle_call(:stop, _from, count) do
-    IO.write("\e[2K\r")
+    IO.write([IO.ANSI.cursor_left(1), IO.ANSI.clear_line()])
     {:stop, :normal, :ok, count}
   end
 
   defp tick(count) do
     index = rem(count, length(@frames))
-    IO.write(["\e[2K\r", Enum.at(@frames, index)])
+
+    IO.write([
+      IO.ANSI.cursor_left(1),
+      IO.ANSI.clear_line(),
+      Enum.at(@frames, index)
+    ])
+
     Process.send_after(self(), :tick, 100)
     count + 1
   end
