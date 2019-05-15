@@ -4,6 +4,6 @@ defmodule RRSS.CLI do
     response = RRSS.get(Enum.random(args))
     RRSS.Spinner.stop()
 
-    IO.inspect(response)
+    RRSS.IO.puts()
   end
 end
