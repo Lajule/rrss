@@ -1,4 +1,4 @@
-defmodule RRSS do
+defmodule RRSS.HTTP do
   use HTTPoison.Base
 
   def process_response_body(body) do

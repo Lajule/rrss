@@ -3,7 +3,7 @@ defmodule RRSS.Spinner do
 
   @name :rrss_spinner
 
-  @frames ~w[/ - \\ |]
+  @frames ~w[▁ ▂ ▃ ▄ ▅ ▆ ▇ █ ▇ ▆ ▅ ▄ ▃]
 
   def start do
     GenServer.start(__MODULE__, 0, name: @name)
