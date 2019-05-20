@@ -1,6 +1,6 @@
 # RRSS
 
-**TODO: Add description**
+A terminal application to get a random item from an RSS feed.
 
 ## Installation
 
