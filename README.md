@@ -14,12 +14,15 @@ def deps do
   ]
 end
 ```
+
+## Build
+
+You can build the application with following mix task `mix escript.build`, see [documentation](https://hexdocs.pm/mix/master/Mix.Tasks.Escript.Build.html) for more help.
+
 ## Docker
+
+You can run the application in a Docker container using:
 
 ```sh
 docker run -it --rm -v $PWD:/usr/src/rrss -v $PWD:/root -w /usr/src/rrss elixir iex -S mix
 ```
-
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/rrss](https://hexdocs.pm/rrss).
