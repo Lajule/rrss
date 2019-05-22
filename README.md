@@ -21,7 +21,7 @@ You can build the application with following mix task `mix escript.build`, see [
 
 ## Docker
 
-You can run the application in a Docker [container](https://hub.docker.com/_/elixir/) using:
+You can run the application in a Docker [container](https://hub.docker.com/_/elixir/) using :
 
 ```sh
 docker run -it --rm -v $PWD:/usr/src/rrss -v $PWD:/root -w /usr/src/rrss elixir iex -S mix
