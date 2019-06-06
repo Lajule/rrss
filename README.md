@@ -19,10 +19,16 @@ end
 
 You can build the application with following mix task `mix escript.build`, see [documentation](https://hexdocs.pm/mix/master/Mix.Tasks.Escript.Build.html) for more help.
 
-## Docker
 
-You can run the application in a Docker [container](https://hub.docker.com/_/elixir/) using :
+## Usage
+
+To get a random item from several RSS feeds, simply type :
 
 ```sh
-docker run -it --rm -v $PWD:/usr/src/rrss -v $PWD:/root -w /usr/src/rrss elixir iex -S mix
+rrss https://www.feedforall.com/sample.xml https://www.feedforall.com/sample-feed.xml
+Recommended Desktop Feed Reader Software
+FeedDemon enables you to quickly read and gather information from hundreds of web sites - without having to visit them. Don't waste any more time checking your favorite web sites for updates. Instead, use FeedDemon and make them come to you. 
+
+More FeedDemon Information
+http://www.feedforall.com/feedforall-partners.htm
 ```
