@@ -26,22 +26,16 @@ To get a random item from several RSS feeds, simply type :
 
 ```sh
 rrss https://www.feedforall.com/sample.xml https://www.feedforall.com/sample-feed.xml
-RSS Solutions for Restaurants
-FeedForAll helps Restaurant's communicate with customers. Let your customers know the latest specials or events.
+RSS Solutions for Meteorologists
+FeedForAll helps Meteorologists communicate with the general public about storm warnings and weather alerts, in specific regions. Using RSS meteorologists are able to quickly disseminate urgent and life threatening weather warnings.
 
 
-RSS feed uses include:
-Daily Specials 
+Uses Include:
+Weather Alerts
 
-Entertainment 
+Plotting Storms
 
-Calendar of Events 
-http://www.feedforall.com/restaurant.htm
-RSS Resources
-Be sure to take a look at some of our favorite RSS Resources
-RSS Specifications
-Blog Connection
+School Cancellations
+http://www.feedforall.com/weather.htm
 
-
-http://www.feedforall.com
 ```
