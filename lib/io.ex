@@ -15,5 +15,6 @@ defmodule RRSS.IO do
 
     IO.puts(body.description)
     IO.puts(body.link)
+    IO.write("\n")
   end
 end
